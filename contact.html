@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Tania Rajendran</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+  <main>
+    <div class="contact">
+      <div>
+        <p class="eyebrow">Say hello</p>
+        <h1>Contact</h1>
+        <p class="lead">Have a question, an opportunity, or just want to chat? I'd love to hear from you.</p>
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-envelope"></i> <a data-email href="#">you@example.com</a></li>
+          <li><i class="fa-solid fa-location-dot"></i> Singapore</li>
+          <li><i class="fa-solid fa-clock"></i> I usually reply within a few days</li>
+        </ul>
+      </div>
+
+      <!-- The form sends messages to your inbox via Formspree (free):
+           1. Sign up at https://formspree.io and create a form.
+           2. Replace YOUR_FORM_ID below with the ID it gives you. -->
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label>Name
+          <input type="text" name="name" autocomplete="name" required>
+        </label>
+        <label>Email
+          <input type="email" name="email" autocomplete="email" required>
+        </label>
+        <label>Subject
+          <input type="text" name="subject">
+        </label>
+        <label>Message
+          <textarea name="message" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send message <i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </main>
+  <script src="js/site.js"></script>
+</body>
+</html>
